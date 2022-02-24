@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="akula_robot">
+
+<xacro:include filename="$(find AkulaPackage)/model/akula_general.xacro" />
+
+<link name="map" />
+
+<xacro:akula name="akula" parent="map">
+  <origin xyz="0 0 0" rpy="0 0 0" />
+</xacro:akula>
+
+<xacro:velodyne parent="akula">
+  <origin xyz="-0.190 0 0.613" rpy="0 0 0" />
+</xacro:velodyne>
+
+<xacro:imu parent="akula">
+  <origin xyz="-0.13105 -0.0252 0.25839" rpy="${radians(90)} 0 ${radians(180)}" />
+</xacro:imu>
+
+<xacro:board parent="akula">
+  <origin xyz="-0.13105 -0.0202 0.26839" rpy="0 0 0" />
+</xacro:board>
+
+<xacro:basler parent="akula">
+  <origin xyz="0.126104 0.00069 0.46668" rpy="0 0 0" />
+</xacro:basler>
+
+</robot>

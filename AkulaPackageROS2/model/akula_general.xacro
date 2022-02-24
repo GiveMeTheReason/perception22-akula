@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+<xacro:include filename="$(find AkulaPackage)/model/utils/colors.urdf.xacro" />
+
+<!-- - - - - - - - - - - - properties and macros - - - - - - - - - - - -->
+
+<xacro:macro name="akula" params="parent name *origin">
+
+  <!-- - - - - - - - - - - - base - - - - - - - - - - - -->
+
+  <joint name="${parent}_${name}_base_joint" type="fixed">
+    <xacro:insert_block name="origin"/>
+    <parent link="${parent}"/>
+    <child link="${name}_base"/>
+  </joint>
+  <link name="${name}_base">
+    <!--actual base-->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 ${-0.5*pi}"/>
+      <geometry>
+        <mesh filename="package://AkulaPackage/model/meshes/frame.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="AKULA/TrafficBlue" />
+    </visual>
+
+    <!-- - - - - - - - - - - - wheels - - - - - - - - - - - -->
+
+    <!-- left_front_wheel-->
+    <visual>
+      <origin xyz="0.190 0.2485 0.04" rpy="0 0 ${-0.5*pi}"/>
+      <geometry>
+        <mesh filename="package://AkulaPackage/model/meshes/wheel_10_in.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="AKULA/Black" />
+    </visual>
+
+    <!-- left_rear_wheel-->
+    <visual>
+      <origin xyz="-0.190 0.2485 0.04" rpy="0 0 ${-0.5*pi}"/>
+      <geometry>
+        <mesh filename="package://AkulaPackage/model/meshes/wheel_10_in.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="AKULA/Black" />
+    </visual>
+
+    <!-- right_front_wheel-->
+    <visual>
+      <origin xyz="0.190 -0.2485 0.04" rpy="0 0 ${-0.5*pi}"/>
+      <geometry>
+        <mesh filename="package://AkulaPackage/model/meshes/wheel_10_in.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="AKULA/Black" />
+    </visual>
+
+    <!-- right_rear_motor-->
+    <visual>
+      <origin xyz="-0.190 -0.2485 0.04" rpy="0 0 ${-0.5*pi}"/>
+      <geometry>
+        <mesh filename="package://AkulaPackage/model/meshes/wheel_10_in.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="AKULA/Black" />
+    </visual>
+  </link>
+</xacro:macro>
+
+  <!-- - - - - - - - - - - - VLP-16 lidar scan - - - - - - - - - - - -->
+
+<xacro:macro name="velodyne" params="parent *origin">
+
+  <joint name="$velodyne_base_mount_joint" type="fixed">
+    <xacro:insert_block name="origin"/>
+    <parent link="${parent}_base"/>
+    <child link="velodyne"/>
+  </joint>
+
+  <link name="velodyne">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.03585"/>
+      <geometry>
+        <mesh filename="package://AkulaPackage/model/meshes/VLP16_base_1.dae" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.03585"/>
+      <geometry>
+        <mesh filename="package://AkulaPackage/model/meshes/VLP16_scan.dae" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.03585"/>
+      <geometry>
+        <mesh filename="package://AkulaPackage/model/meshes/VLP16_base_2.dae" />
+      </geometry>
+    </visual>
+  </link>
+</xacro:macro>
+
+<!-- - - - - - - - - - - - IMU sensor MOD-MPU9150 on prototyping board - - - - - - - - - - - -->
+
+  <xacro:macro name="imu" params="parent *origin">
+
+    <joint name="imu_base_mount_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}_base"/>
+      <child link="imu0"/>
+    </joint>
+
+    <link name="imu0">
+      <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+          <box size="0.005 0.005 0.005"/>
+        </geometry>
+        <material name="AKULA/Black" />
+      </visual>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="board" params="parent *origin">
+
+    <joint name="board_base_mount_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}_base"/>
+      <child link="board"/>
+    </joint>
+
+    <link name="board">
+      <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+          <box size="0.046 0.010 0.035"/>
+        </geometry>
+        <material name="AKULA/White" />
+      </visual>
+    </link>
+
+  </xacro:macro>
+
+  <!-- - - - - - - - - - - - Basler camera - - - - - - - - - - - -->
+
+<xacro:macro name="basler" params="parent *origin">
+
+  <joint name="basler_base_mount_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}_base"/>
+      <child link="basler"/>
+    </joint>
+
+  <link name="basler">
+    <visual>
+      <origin rpy="1.57 0 1.57" xyz="-0.05 0 0"/>
+      <geometry>
+        <box size="0.03 0.03 0.1"/>
+      </geometry>
+      <material name="AKULA/LightGrey" />
+    </visual>
+  </link>
+</xacro:macro>
+
+</robot>
