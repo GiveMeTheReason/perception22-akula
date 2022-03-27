@@ -12,7 +12,7 @@ Skoltech educational project. Performed within the [Perception in Robotics 2022]
 
 ## Usage
 
-* first of all, you need to compute ground truth path using lidar data
+* first of all, you need to compute ground truth path using lidar data. For that we used [this](https://github.com/laboshinl/loam_velodyne) repository.
 
 
 * then, you can use collected data from sensors and try to reconstruct poses of robot using the Kalman Filer. (You should to be in `.../perception22-akula/` directory)
