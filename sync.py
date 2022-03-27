@@ -1,7 +1,7 @@
 from ekf import EKFarc
 import numpy as np
 import matplotlib.pyplot as plt
-
+import argparse
 
 def forward_kinematics(params: dict, state: np.ndarray, odometry: np.ndarray) -> np.ndarray:
     """
@@ -49,127 +49,150 @@ def forward_kinematics(params: dict, state: np.ndarray, odometry: np.ndarray) ->
     return d_state
 
 
-source_observations = 'obs06.txt'
-source_actions = 'input_log06.txt'
+def aplly_EKF():
+    source_observations = 'obs06.txt'
+    source_actions = 'input_log06.txt'
 
-obs = open(source_observations, 'r', encoding='utf-8')
-acts = open(source_actions, 'r', encoding='utf-8')
+    obs = open(source_observations, 'r', encoding='utf-8')
+    acts = open(source_actions, 'r', encoding='utf-8')
 
-input_filename = 'input_log06.txt'
-f_in = open(input_filename, 'r')
+    input_filename = 'input_log06.txt'
+    f_in = open(input_filename, 'r')
 
-# metres
-params = {'diag_length': 0.490,
-          'wheel_radius': 0.130,
-          'counts_per_rotation': 2394}
+    # metres
+    params = {'diag_length': 0.490,
+              'wheel_radius': 0.130,
+              'counts_per_rotation': 2394}
 
-# find first observation
-ts_obs_prev, left_obs_prev, right_obs_prev = list(map(int, obs.readline().split()))
-while True:
-    ts_obs, left_obs, right_obs = list(map(int, obs.readline().split()))
+    # find first observation
+    ts_obs_prev, left_obs_prev, right_obs_prev = list(map(int, obs.readline().split()))
+    while True:
+        ts_obs, left_obs, right_obs = list(map(int, obs.readline().split()))
 
-    if (left_obs - left_obs_prev) or (right_obs - right_obs_prev):
-        break
-    
-    ts_obs_prev, left_obs_prev, right_obs_prev = ts_obs, left_obs, right_obs
-ts_obs_0 = ts_obs_prev
-ts_obs_prev = 0
-ts_obs -= ts_obs_0
-
-ts_acts_prev, left_acts_prev, right_acts_prev = list(map(int, acts.readline().split()))
-ts_acts_0 = ts_acts_prev
-ts_acts_prev = 0
-
-ts = 0
-
-state_initial = np.array([[0.], [0.], [0.]])
-sigma_initial = np.array([[0., 0., 0.],
-                          [0., 0., 0.],
-                          [0., 0., 0.]])
-alphas = np.array([0, 0, 0, 0])
-d = 0.490
-r = 0.130
-counts_2pi = 2394
-k = 2 * np.pi * r / counts_2pi
-Q = np.array([[1, 0],
-              [0, 1]])
-
-ekf = EKFarc(state_initial, sigma_initial, alphas, d, k, Q)
-x = []
-y = []
-th = []
-
-k = 2 * np.pi * r / counts_2pi
-d_l = (4283919143 - 4283826615) / (1000 * 26.359 * 223)
-d_r = (4288936710 - 4288840803) / (1000 * 26.359 * 223)
-
-while True:
-    acts_line = acts.readline()
-    if not acts_line:
-        break
-    ts_acts, left_acts, right_acts = list(map(int, acts_line.split()))
-    ts_acts -= ts_acts_0
-
-    v = (d_r * right_acts_prev + d_l * left_acts_prev) / 2 * k
-    w = (d_r * right_acts_prev - d_l * left_acts_prev) / d * k
-    
-    while ts_obs <= ts_acts:
-        ekf.predict([v, w], (ts_obs - ts)/1000)
-        ekf.update(np.array([[(left_obs-left_obs_prev)], [(right_obs-right_obs_prev)]]))
-        ts = ts_obs
-
-        x.append(ekf.mu[0][0])
-        y.append(ekf.mu[1][0])
-        th.append(ekf.mu[2][0])
-
-        obs_line = obs.readline()
-        if obs_line == '\n':
-            ts_obs = np.inf
+        if (left_obs - left_obs_prev) or (right_obs - right_obs_prev):
             break
         
         ts_obs_prev, left_obs_prev, right_obs_prev = ts_obs, left_obs, right_obs
-        ts_obs, left_obs, right_obs = list(map(int, obs_line.split()))
-        ts_obs -= ts_obs_0
+    ts_obs_0 = ts_obs_prev
+    ts_obs_prev = 0
+    ts_obs -= ts_obs_0
 
-    ekf.predict([v, w], (ts_acts - ts)/1000)
-    ts = ts_acts
+    ts_acts_prev, left_acts_prev, right_acts_prev = list(map(int, acts.readline().split()))
+    ts_acts_0 = ts_acts_prev
+    ts_acts_prev = 0
 
-    ts_acts_prev, left_acts_prev, right_acts_prev = ts_acts, left_acts, right_acts
+    ts = 0
 
-obs.close()
-acts.close()
+    state_initial = np.array([[0.], [0.], [0.]])
+    sigma_initial = np.array([[0., 0., 0.],
+                              [0., 0., 0.],
+                              [0., 0., 0.]])
+    alphas = np.array([0, 0, 0, 0])
+    d = 0.490
+    r = 0.130
+    counts_2pi = 2394
+    k = 2 * np.pi * r / counts_2pi
+    Q = np.array([[1, 0],
+                  [0, 1]])
+
+    ekf = EKFarc(state_initial, sigma_initial, alphas, d, k, Q)
+    x = []
+    y = []
+    th = []
+
+    k = 2 * np.pi * r / counts_2pi
+    d_l = (4283919143 - 4283826615) / (1000 * 26.359 * 223)
+    d_r = (4288936710 - 4288840803) / (1000 * 26.359 * 223)
+
+    while True:
+        acts_line = acts.readline()
+        if not acts_line:
+            break
+        ts_acts, left_acts, right_acts = list(map(int, acts_line.split()))
+        ts_acts -= ts_acts_0
+
+        v = (d_r * right_acts_prev + d_l * left_acts_prev) / 2 * k
+        w = (d_r * right_acts_prev - d_l * left_acts_prev) / d * k
+        
+        while ts_obs <= ts_acts:
+            ekf.predict([v, w], (ts_obs - ts)/1000)
+            ekf.update(np.array([[(left_obs-left_obs_prev)], [(right_obs-right_obs_prev)]]))
+            ts = ts_obs
+
+            x.append(ekf.mu[0][0])
+            y.append(ekf.mu[1][0])
+            th.append(ekf.mu[2][0])
+
+            obs_line = obs.readline()
+            if obs_line == '\n':
+                ts_obs = np.inf
+                break
+            
+            ts_obs_prev, left_obs_prev, right_obs_prev = ts_obs, left_obs, right_obs
+            ts_obs, left_obs, right_obs = list(map(int, obs_line.split()))
+            ts_obs -= ts_obs_0
+
+        ekf.predict([v, w], (ts_acts - ts)/1000)
+        ts = ts_acts
+
+        ts_acts_prev, left_acts_prev, right_acts_prev = ts_acts, left_acts, right_acts
+
+    obs.close()
+    acts.close()
 
 
-# initial state
-state = np.array([0., 0., 0.])
+    # initial state
+    state = np.array([0., 0., 0.])
 
-timestamp_last, left, right = list(map(int, f_in.readline().split()))
+    timestamp_last, left, right = list(map(int, f_in.readline().split()))
 
-x_in = [state[0]]
-y_in = [state[1]]
-th_in = [state[2]]
+    x_in = [state[0]]
+    y_in = [state[1]]
+    th_in = [state[2]]
 
-# ticks (counts on every wheel)
-while True:
-    inp = list(map(int, f_in.readline().split()))
-    if not inp:
-        break
-    timestamp = inp[0]
-    d_time = (timestamp - timestamp_last) / 1000
-    timestamp_last = timestamp
-    odometry = np.array([right*d_time*d_r, left*d_time*d_l])
-    left = inp[1]
-    right = inp[2]
-    d_state = forward_kinematics(params, state, odometry)
-    state = state + d_state
-    x_in.append(state[0])
-    y_in.append(state[1])
-    th_in.append(state[2])
+    # ticks (counts on every wheel)
+    while True:
+        inp = list(map(int, f_in.readline().split()))
+        if not inp:
+            break
+        timestamp = inp[0]
+        d_time = (timestamp - timestamp_last) / 1000
+        timestamp_last = timestamp
+        odometry = np.array([right*d_time*d_r, left*d_time*d_l])
+        left = inp[1]
+        right = inp[2]
+        d_state = forward_kinematics(params, state, odometry)
+        state = state + d_state
+        x_in.append(state[0])
+        y_in.append(state[1])
+        th_in.append(state[2])
 
-f_in.close()
+    f_in.close()
 
-plt.figure()
-plt.plot(x, y)
-plt.plot(np.array(x_in), np.array(y_in))
-plt.legend(['ekf', 'Input'])
-plt.show()
+    plt.figure()
+    plt.plot(x, y)
+    plt.plot(np.array(x_in), np.array(y_in))
+    plt.legend(['ekf', 'Input'])
+    plt.show()
+
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser()
+    
+    parser.add_argument('-src_obs',
+                        type=str,
+                        dest='source_observations',
+                        action='store',
+                        default='./data/obs06.txt',
+                        help="Path to observation file")
+
+    parser.add_argument('-src_act',
+                        type=str,
+                        dest='source_actions',
+                        action='store',
+                        default='./raw_data/input_log06.txt',
+                        help="Path to actions file")
+
+    args = parser.parse_args()
+    aplly_EKF(args)
