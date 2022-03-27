@@ -5,6 +5,21 @@ import argparse
 import scipy.linalg
 import os
 from termcolor import colored
+from scipy.interpolate import interp1d
+
+
+def interpolate(val, t, t_new):
+    if not isinstance(val, np.ndarray):
+        val = np.array(val)
+
+    if not isinstance(t, np.ndarray):
+        t = np.array(t)
+
+    f = interp1d(val, t, fill_value="extrapolate")
+
+    # print(t_new.min(), t_new.max(), t.min(), t.max())
+
+    return f(t_new)
 
 def plot2dcov(mean, covariance, k):
     points = [k*np.cos(np.linspace(0, 2*np.pi)), k*np.sin(np.linspace(0, 2*np.pi))]
@@ -117,6 +132,7 @@ def aplly_EKF(args):
                   [250**2, 1000**2]])
 
     ekf = EKFarc(state_initial, sigma_initial, alphas, d, k_l, k_r, Q)
+    t_ekf = []
     x = []
     y = []
     th = []
@@ -141,6 +157,7 @@ def aplly_EKF(args):
             ekf.update(np.array([[(left_obs-left_obs_prev)], [(right_obs-right_obs_prev)]]))
             ts = ts_obs
 
+            t_ekf.append(ts_obs)
             x.append(ekf.mu[0][0])
             y.append(ekf.mu[1][0])
             th.append(ekf.mu[2][0])
@@ -226,23 +243,26 @@ def aplly_EKF(args):
 
 
     # Plot "Ground Truth"
+    t_gt = []
     x_gt = []
     y_gt = []
     z_gt = []
     th_gt = []
 
-    plot_path_fname = os.path.join(args.folder_path_output, 'plot.png')
-    print(colored('saved to: ', 'green', attrs=['bold']), plot_path_fname)
-
+    
     while True:
-        if not f.readline().split():
+        t_gt_inp = f.readline()
+        if not t_gt_inp:
             break
+        t_gt.append(float(t_gt_inp.split()[-1]))
+
         x_gt.append(float(f.readline().split()[-1]))
         y_gt.append(float(f.readline().split()[-1]))
         z_gt.append(float(f.readline().split()[-1]))
         th_gt.append(float(f.readline().split()[-1]))
 
     # GT axis rotation
+    t_gt = np.array(t_gt) - t_gt[0]
     x_gt = np.array(x_gt)
     y_gt = np.array(y_gt)
     z_gt = np.array(z_gt)
@@ -251,6 +271,7 @@ def aplly_EKF(args):
 
     # print(ekf.sigma)
 
+    plot_path_fname = os.path.join(args.folder_path_output, 'plot.png')
     plt.figure()
     plt.plot(x, y)
     plt.plot(np.array(x_in), np.array(y_in))
@@ -261,6 +282,34 @@ def aplly_EKF(args):
     plt.axis('equal')
     plt.savefig(plot_path_fname, dpi=400)
     plt.show()
+    
+    print(colored('saved to: ', 'green', attrs=['bold']), plot_path_fname)
+
+    # print(t_gt)
+    # print(t_ekf)
+    # print(max(np.array(t_ekf).min(), t_gt.min()), min(np.array(t_ekf).max(), t_gt.max()))
+    t_sync = np.linspace(max(np.array(t_ekf).min(), t_gt.min()) + 10, min(np.array(t_ekf).max(), t_gt.max()) - 10, 100)
+    # print('yes ')
+    # print(np.array(np.array(t_ekf).max()), np.array(t_ekf).min(), t_sync.max(), t_sync.min())
+    x_sync = interpolate(x, t_ekf, t_sync)
+    # print('yes ')
+    y_sync = interpolate(y, t_ekf, t_sync)
+    # print('yes ')
+    x_gt_sync = interpolate(x_gt, t_gt, t_sync)
+    # print('yes ')
+    y_gt_sync = interpolate(y_gt, t_gt, t_sync)
+    # print('yes ')
+    plot_err_fname = os.path.join(args.folder_path_output, 'err.png')
+    plt.figure()
+    plt.plot(t_sync, np.linalg.norm(np.vstack((x_sync, y_sync)) - np.vstack((x_gt_sync, y_gt_sync)), axis=0, ord=2), '-', label=r'$||pose_{ekf} - pose_{GT}||$')
+    plt.legend(loc='best')
+    plt.xlabel('time (ms)')
+    plt.savefig(plot_err_fname, dpi=400)
+    plt.show()
+
+    print(colored('saved to: ', 'green', attrs=['bold']), plot_err_fname)
+
+
 
 
 if __name__ == '__main__':
