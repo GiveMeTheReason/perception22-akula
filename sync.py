@@ -2,6 +2,8 @@ from ekf import EKFarc
 import numpy as np
 import matplotlib.pyplot as plt
 import argparse
+import os
+from termcolor import colored
 
 def forward_kinematics(params: dict, state: np.ndarray, odometry: np.ndarray) -> np.ndarray:
     """
@@ -49,14 +51,14 @@ def forward_kinematics(params: dict, state: np.ndarray, odometry: np.ndarray) ->
     return d_state
 
 
-def aplly_EKF():
-    source_observations = 'obs06.txt'
-    source_actions = 'input_log06.txt'
+def aplly_EKF(args):
+    source_observations = args.source_observations
+    source_actions = args.source_actions
 
     obs = open(source_observations, 'r', encoding='utf-8')
     acts = open(source_actions, 'r', encoding='utf-8')
 
-    input_filename = 'input_log06.txt'
+    input_filename = args.input_filename
     f_in = open(input_filename, 'r')
 
     # metres
@@ -151,6 +153,8 @@ def aplly_EKF():
     th_in = [state[2]]
 
     # ticks (counts on every wheel)
+    folder_name_plot_path = args.folder_path_output
+    file_name_plot_path = os.path.join(folder_name_plot_path, 'path.png')
     while True:
         inp = list(map(int, f_in.readline().split()))
         if not inp:
@@ -171,8 +175,11 @@ def aplly_EKF():
 
     plt.figure()
     plt.plot(x, y)
+    plt.grid()
     plt.plot(np.array(x_in), np.array(y_in))
     plt.legend(['ekf', 'Input'])
+    plt.savefig(file_name_plot_path, dpi=400)
+    print(colored('saved to:', 'blue', attrs=['bold']), file_name_plot_path)
     plt.show()
 
 
@@ -193,6 +200,18 @@ if __name__ == '__main__':
                         action='store',
                         default='./raw_data/input_log06.txt',
                         help="Path to actions file")
+
+    parser.add_argument('-inp_file',
+                        type=str,
+                        dest='input_filename',
+                        action='store',
+                        default='./raw_data/input_log06.txt')
+
+    parser.add_argument('-save_to',
+                        type=str,
+                        dest='folder_path_output',
+                        action='store',
+                        default='./output')
 
     args = parser.parse_args()
     aplly_EKF(args)
