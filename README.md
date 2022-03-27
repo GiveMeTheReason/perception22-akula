@@ -18,7 +18,7 @@ Skoltech educational project. Performed within the [Perception in Robotics 2022]
 * then, you can use collected data from sensors and try to reconstruct poses of robot using the Kalman Filer. (You should to be in `.../perception22-akula/` directory)
 
 ```bash
-python3 sync.py -src_obs ./data/obs06.txt -src_act ./raw_data/input_log06.txt -save_to ./output
+python3 sync.py -src_obs ./data/obs07.txt -src_act ./raw_data/input_log07.txt -save_to ./output
 ````
 
 <p align="center">

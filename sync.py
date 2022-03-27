@@ -15,7 +15,7 @@ def interpolate(val, t, t_new):
     if not isinstance(t, np.ndarray):
         t = np.array(t)
 
-    f = interp1d(val, t, fill_value="extrapolate")
+    f = interp1d(t, val)
 
     # print(t_new.min(), t_new.max(), t.min(), t.max())
 
@@ -280,6 +280,7 @@ def aplly_EKF(args):
     plot2dcov(ekf.mu[:2], ekf.sigma[:2, :2], k=3)
     plt.legend(['EKF', 'Raw input prediction', 'Raw Encoders prediction', 'Ground truth', '3sigma iso-contour'])
     plt.axis('equal')
+    plt.grid()
     plt.savefig(plot_path_fname, dpi=400)
     plt.show()
     
@@ -300,10 +301,12 @@ def aplly_EKF(args):
     y_gt_sync = interpolate(y_gt, t_gt, t_sync)
     # print('yes ')
     plot_err_fname = os.path.join(args.folder_path_output, 'err.png')
+
     plt.figure()
     plt.plot(t_sync, np.linalg.norm(np.vstack((x_sync, y_sync)) - np.vstack((x_gt_sync, y_gt_sync)), axis=0, ord=2), '-', label=r'$||pose_{ekf} - pose_{GT}||$')
     plt.legend(loc='best')
     plt.xlabel('time (ms)')
+    plt.grid()
     plt.savefig(plot_err_fname, dpi=400)
     plt.show()
 
