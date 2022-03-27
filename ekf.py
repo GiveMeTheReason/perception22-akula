@@ -12,13 +12,14 @@ class EKFarc:
     :param k :observation = (delta distance) / k
     :param Q: covariance matrix of observation
     """
-    def __init__(self, state_initial, sigma_initial, alphas, d, k, Q):
+    def __init__(self, state_initial, sigma_initial, alphas, d, k_l, k_r, Q):
         self.mu = state_initial
         self.sigma = sigma_initial
         self.alphas = alphas
         self.previous_state = state_initial
         self.d = d
-        self.k = k
+        self.k_l = k_l
+        self.k_r = k_r
         self.Q = Q
 
 
@@ -41,7 +42,6 @@ class EKFarc:
             self.mu_bar = self.mu + np.array([[v * delta_t * np.cos(mu_theta)],
                                               [v * delta_t * np.sin(mu_theta)],
                                               [0]])
-            # w+=1e-100 # not computationally stable (1e-100)
 
         Gt = self.get_Gt(mu_theta, delta_t, v, w)
         Vt = self.get_Vt(mu_theta, delta_t, v, w)
@@ -61,25 +61,27 @@ class EKFarc:
 
         c = (dx ** 2 + dy ** 2) ** 0.5
 
-        # TODO: not stable (add rotational)
-        # if c == 0:
-            # return None
-
         delta_theta = wrap_angle(self.mu_bar[2][0] - self.previous_state[2][0])
 
-        scal_prod = dx * np.cos(delta_theta) + dy * np.sin(delta_theta)
+        # sign of scalar product between
+        # robot orientation vector (delta_theta) and movement difference
+        # says if robot moves forward or backward
+        # (it changes the signes of sensor model, so sensor model is piecewise function)
+        scal_prod = dx * np.cos(self.mu_bar[2][0]) + dy * np.sin(self.mu_bar[2][0])
 
         #Calculate predicted observation    
         if delta_theta != 0:
-            z_hat = delta_theta / (2 * self.k) * np.array([[c / np.sin(delta_theta/2) - self.d * np.sign(scal_prod)],
-                                                           [c / np.sin(delta_theta/2) + self.d * np.sign(scal_prod)]])
+            z_hat = delta_theta / 2 * np.array([[c / np.sin(delta_theta/2) - self.d * np.sign(scal_prod)],
+                                                [c / np.sin(delta_theta/2) + self.d * np.sign(scal_prod)]])
         else:
-            z_hat = 1 / self.k * np.array([[c],
-                                           [c]])
+            z_hat = np.array([[c],
+                              [c]])
+        z_hat[0, 0] = z_hat[0, 0] / self.k_l
+        z_hat[1, 0] = z_hat[1, 0] / self.k_r
         z_hat *= np.sign(scal_prod)
 
         # Calculate Jacobian of observation matrix
-        Ht = self.get_Ht(dx, dy, delta_theta)
+        Ht = self.get_Ht(dx, dy, delta_theta, scal_prod)
         Ht *= np.sign(scal_prod)
 
         St = Ht @ self.sigma_bar @ Ht.T + self.Q
@@ -139,25 +141,27 @@ class EKFarc:
         return Mt
 
 
-    def get_Ht(self, dx, dy, delta_theta):
+    def get_Ht(self, dx, dy, delta_theta, scal_prod):
         """
-        Calculate observation matrix
+        Calculate observation matrix (Jacobian of Sensor model with respect to state space)
         """
         c = (dx ** 2 + dy ** 2) ** 0.5
 
         if not c:
-            Ht = 1 / self.k * np.array([[0, 0, -delta_theta],
-                                        [0, 0, delta_theta]])
+            Ht = np.array([[0, 0, -delta_theta],
+                           [0, 0, delta_theta]])
         elif delta_theta:
-            Ht = 1 / self.k * np.array([[delta_theta / (2 * self.k) * dx / c * 1 / np.sin(delta_theta/2), \
-                                         delta_theta / (2 * self.k) * dy / c * 1 / np.sin(delta_theta/2), \
-                                         (- delta_theta * np.sin(delta_theta) * np.sin(delta_theta/2) / np.power(np.cos(delta_theta)-1, 2) - 2 * np.sin(delta_theta / 2) / (np.cos(delta_theta)-1)) * \
-                                             c / (2 * self.k)],
-                                        [delta_theta / (2 * self.k) * dx / c * 1 / np.sin(delta_theta/2), \
-                                         delta_theta / (2 * self.k) * dy / c * 1 / np.sin(delta_theta/2), \
-                                         (- delta_theta * np.sin(delta_theta) * np.sin(delta_theta/2) / np.power(np.cos(delta_theta)-1, 2) - 2 * np.sin(delta_theta / 2) / (np.cos(delta_theta)-1)) * \
-                                             c / (2 * self.k)]])
+            Ht = np.array([[delta_theta / 2 * dx / c * 1 / np.sin(delta_theta/2), \
+                            delta_theta / 2 * dy / c * 1 / np.sin(delta_theta/2), \
+                            (- delta_theta * np.sin(delta_theta) * np.sin(delta_theta/2) / np.power(np.cos(delta_theta)-1, 2) - 2 * np.sin(delta_theta / 2) / (np.cos(delta_theta)-1)) * \
+                                c / 2 - self.d * np.sign(scal_prod)],
+                           [delta_theta / 2 * dx / c * 1 / np.sin(delta_theta/2), \
+                            delta_theta / 2 * dy / c * 1 / np.sin(delta_theta/2), \
+                            (- delta_theta * np.sin(delta_theta) * np.sin(delta_theta/2) / np.power(np.cos(delta_theta)-1, 2) - 2 * np.sin(delta_theta / 2) / (np.cos(delta_theta)-1)) * \
+                                c / 2 + self.d * np.sign(scal_prod)]])
         else:
-            Ht = 1 / self.k * np.array([[dx / c, dy / c, 0],
-                                        [dx / c, dy / c, 0]])
+            Ht = np.array([[dx / c, dy / c, 0],
+                           [dx / c, dy / c, 0]])
+        Ht[0] = Ht[0] / self.k_l
+        Ht[1] = Ht[1] / self.k_r
         return Ht

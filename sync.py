@@ -2,8 +2,17 @@ from ekf import EKFarc
 import numpy as np
 import matplotlib.pyplot as plt
 import argparse
+import scipy.linalg
 import os
 from termcolor import colored
+
+def plot2dcov(mean, covariance, k):
+    points = [k*np.cos(np.linspace(0, 2*np.pi)), k*np.sin(np.linspace(0, 2*np.pi))]
+
+    L = scipy.linalg.cholesky(covariance).T
+    points = L @ points + mean
+    return plt.plot(points[0], points[1])
+
 
 def forward_kinematics(params: dict, state: np.ndarray, odometry: np.ndarray) -> np.ndarray:
     """
@@ -26,16 +35,19 @@ def forward_kinematics(params: dict, state: np.ndarray, odometry: np.ndarray) ->
     assert odometry.shape == (2,)
     assert params.get('diag_length')
     assert params.get('wheel_radius')
-    assert params.get('counts_per_rotation')
+    assert params.get('counts_per_rotation_right')
+    assert params.get('counts_per_rotation_left')
 
     l = params['diag_length']
     r = params['wheel_radius']
-    counts_2pi = params['counts_per_rotation']
+    counts_2pi_r = params['counts_per_rotation_right']
+    counts_2pi_l = params['counts_per_rotation_left']
     x, y, th = state
 
-    k = 2 * np.pi * r / counts_2pi
-    d_len_right = odometry[0] * k
-    d_len_left = odometry[1] * k
+    k_r = 2 * np.pi * r / counts_2pi_r
+    k_l = 2 * np.pi * r / counts_2pi_l
+    d_len_right = odometry[0] * k_r
+    d_len_left = odometry[1] * k_l
     d_len = (d_len_right + d_len_left) / 2
     d_angle = (d_len_right - d_len_left) / l
 
@@ -51,20 +63,25 @@ def forward_kinematics(params: dict, state: np.ndarray, odometry: np.ndarray) ->
     return d_state
 
 
+
 def aplly_EKF(args):
+    
     source_observations = args.source_observations
     source_actions = args.source_actions
+    trajectory_filename = args.trajectory_filename
 
     obs = open(source_observations, 'r', encoding='utf-8')
     acts = open(source_actions, 'r', encoding='utf-8')
 
-    input_filename = args.source_actions
-    f_in = open(input_filename, 'r')
+    f_in = open(source_actions, 'r', encoding='utf-8')
+    f_od = open(source_observations, 'r')
+    f = open(trajectory_filename, 'r')
 
     # metres
     params = {'diag_length': 0.490,
               'wheel_radius': 0.130,
-              'counts_per_rotation': 2394}
+              'counts_per_rotation_left': 2594,
+              'counts_per_rotation_right': 3248}
 
     # find first observation
     ts_obs_prev, left_obs_prev, right_obs_prev = list(map(int, obs.readline().split()))
@@ -89,22 +106,25 @@ def aplly_EKF(args):
     sigma_initial = np.array([[0., 0., 0.],
                               [0., 0., 0.],
                               [0., 0., 0.]])
-    alphas = np.array([0, 0, 0, 0])
-    d = 0.490
-    r = 0.130
-    counts_2pi = 2394
-    k = 2 * np.pi * r / counts_2pi
-    Q = np.array([[1, 0],
-                  [0, 1]])
+    alphas = np.array([500, 500, 500, 500])**2
+    d = params['diag_length']
+    r = params['wheel_radius']
+    counts_2pi_l = params['counts_per_rotation_left']
+    counts_2pi_r = params['counts_per_rotation_right']
+    k_l = 2 * np.pi * r / counts_2pi_l
+    k_r = 2 * np.pi * r / counts_2pi_r
+    Q = np.array([[1000**2, 250**2],
+                  [250**2, 1000**2]])
 
-    ekf = EKFarc(state_initial, sigma_initial, alphas, d, k, Q)
+    ekf = EKFarc(state_initial, sigma_initial, alphas, d, k_l, k_r, Q)
     x = []
     y = []
     th = []
 
-    k = 2 * np.pi * r / counts_2pi
-    d_l = (4283919143 - 4283826615) / (1000 * 26.359 * 223)
-    d_r = (4288936710 - 4288840803) / (1000 * 26.359 * 223)
+    # emperical
+    # delta_ticks / (delta_time * pwm_duty)
+    d_l = (133933 - 82051) / ( (49848 - 26384)/1000 * 180)
+    d_r = (250892 - 185913) / ( (28735 - 5797)/1000 * 180)
 
     while True:
         acts_line = acts.readline()
@@ -113,8 +133,8 @@ def aplly_EKF(args):
         ts_acts, left_acts, right_acts = list(map(int, acts_line.split()))
         ts_acts -= ts_acts_0
 
-        v = (d_r * right_acts_prev + d_l * left_acts_prev) / 2 * k
-        w = (d_r * right_acts_prev - d_l * left_acts_prev) / d * k
+        v = (k_r * d_r * right_acts_prev + k_l * d_l * left_acts_prev) / 2
+        w = (k_r * d_r * right_acts_prev - k_l * d_l * left_acts_prev) / d
         
         while ts_obs <= ts_acts:
             ekf.predict([v, w], (ts_obs - ts)/1000)
@@ -126,7 +146,7 @@ def aplly_EKF(args):
             th.append(ekf.mu[2][0])
 
             obs_line = obs.readline()
-            if obs_line == '\n':
+            if not obs_line:
                 ts_obs = np.inf
                 break
             
@@ -143,6 +163,7 @@ def aplly_EKF(args):
     acts.close()
 
 
+    # Plot raw input
     # initial state
     state = np.array([0., 0., 0.])
 
@@ -152,9 +173,7 @@ def aplly_EKF(args):
     y_in = [state[1]]
     th_in = [state[2]]
 
-    # ticks (counts on every wheel)
-    folder_name_plot_path = args.folder_path_output
-    file_name_plot_path = os.path.join(folder_name_plot_path, 'path.png')
+    # inputs pwm (counts on every wheel)
     while True:
         inp = list(map(int, f_in.readline().split()))
         if not inp:
@@ -162,24 +181,85 @@ def aplly_EKF(args):
         timestamp = inp[0]
         d_time = (timestamp - timestamp_last) / 1000
         timestamp_last = timestamp
-        odometry = np.array([right*d_time*d_r, left*d_time*d_l])
+        linspace = 20
+        for t in range(linspace):
+            odometry = np.array([right*d_time*d_r/linspace, left*d_time*d_l/linspace])
+            d_state = forward_kinematics(params, state, odometry)
+            state = state + d_state
+            x_in.append(state[0])
+            y_in.append(state[1])
+            th_in.append(state[2])
         left = inp[1]
         right = inp[2]
-        d_state = forward_kinematics(params, state, odometry)
-        state = state + d_state
-        x_in.append(state[0])
-        y_in.append(state[1])
-        th_in.append(state[2])
 
     f_in.close()
 
+
+    # Plot raw encoders
+    # initial state
+    state = np.array([0., 0., 0.])
+
+    _, left_last, right_last = list(map(int, f_od.readline().split()))
+
+    x_od = [state[0]]
+    y_od = [state[1]]
+    th_od = [state[2]]
+
+    # ticks (counts on every wheel)
+    while True:
+        inp = f_od.readline().split()
+        if not inp:
+            break
+        _, left, right = list(map(int, inp))
+        left = left - left_last
+        right = right - right_last
+        left_last = left + left_last
+        right_last = right + right_last
+        odometry = np.array([right, left])
+        d_state = forward_kinematics(params, state, odometry)
+        state = state + d_state
+        x_od.append(state[0])
+        y_od.append(state[1])
+        th_od.append(state[2])
+
+    f_od.close()
+
+
+    # Plot "Ground Truth"
+    x_gt = []
+    y_gt = []
+    z_gt = []
+    th_gt = []
+
+    plot_path_fname = os.path.join(args.folder_path_output, 'plot.png')
+    print(colored('saved to: ', 'green', attrs=['bold']), plot_path_fname)
+
+    while True:
+        if not f.readline().split():
+            break
+        x_gt.append(float(f.readline().split()[-1]))
+        y_gt.append(float(f.readline().split()[-1]))
+        z_gt.append(float(f.readline().split()[-1]))
+        th_gt.append(float(f.readline().split()[-1]))
+
+    # GT axis rotation
+    x_gt = np.array(x_gt)
+    y_gt = np.array(y_gt)
+    z_gt = np.array(z_gt)
+    x_gt, y_gt = z_gt, -y_gt
+    alp = 0
+
+    # print(ekf.sigma)
+
     plt.figure()
     plt.plot(x, y)
-    plt.grid()
     plt.plot(np.array(x_in), np.array(y_in))
-    plt.legend(['ekf', 'Input'])
-    plt.savefig(file_name_plot_path, dpi=400)
-    print(colored('saved to:', 'blue', attrs=['bold']), file_name_plot_path)
+    plt.plot(np.array(x_od), np.array(y_od))
+    plt.plot(x_gt*np.cos(alp) - y_gt*np.sin(alp), x_gt*np.sin(alp) + y_gt*np.cos(alp))
+    plot2dcov(ekf.mu[:2], ekf.sigma[:2, :2], k=3)
+    plt.legend(['EKF', 'Raw input prediction', 'Raw Encoders prediction', 'Ground truth', '3sigma iso-contour'])
+    plt.axis('equal')
+    plt.savefig(plot_path_fname, dpi=400)
     plt.show()
 
 
@@ -191,14 +271,21 @@ if __name__ == '__main__':
                         type=str,
                         dest='source_observations',
                         action='store',
-                        default='./data/obs06.txt',
+                        default='./data/obs07.txt',
                         help="Path to observation file")
 
     parser.add_argument('-src_act',
                         type=str,
                         dest='source_actions',
                         action='store',
-                        default='./raw_data/input_log06.txt',
+                        default='./raw_data/input_log07.txt',
+                        help="Path to actions file")
+
+    parser.add_argument('-traj',
+                        type=str,
+                        dest='trajectory_filename',
+                        action='store',
+                        default='./data/trajectory07.txt',
                         help="Path to actions file")
 
 
