@@ -58,7 +58,7 @@ def aplly_EKF(args):
     obs = open(source_observations, 'r', encoding='utf-8')
     acts = open(source_actions, 'r', encoding='utf-8')
 
-    input_filename = args.input_filename
+    input_filename = args.source_actions
     f_in = open(input_filename, 'r')
 
     # metres
@@ -201,11 +201,6 @@ if __name__ == '__main__':
                         default='./raw_data/input_log06.txt',
                         help="Path to actions file")
 
-    parser.add_argument('-inp_file',
-                        type=str,
-                        dest='input_filename',
-                        action='store',
-                        default='./raw_data/input_log06.txt')
 
     parser.add_argument('-save_to',
                         type=str,
