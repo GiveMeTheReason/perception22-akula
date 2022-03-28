@@ -22,5 +22,5 @@ python3 sync.py -src_obs ./data/obs07.txt -src_act ./raw_data/input_log07.txt -s
 ````
 
 <p align="center">
-  <img src="output/path.png" />
+  <img src="output/plot.png" />
 </p>
