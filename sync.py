@@ -2,10 +2,10 @@ from ekf import EKFarc
 import numpy as np
 import matplotlib.pyplot as plt
 import argparse
-import scipy.linalg
 import os
 from termcolor import colored
 from scipy.interpolate import interp1d
+from utils import *
 
 
 def interpolate(val, t, t_new):
@@ -21,65 +21,8 @@ def interpolate(val, t, t_new):
 
     return f(t_new)
 
-def plot2dcov(mean, covariance, k):
-    points = [k*np.cos(np.linspace(0, 2*np.pi)), k*np.sin(np.linspace(0, 2*np.pi))]
 
-    L = scipy.linalg.cholesky(covariance).T
-    points = L @ points + mean
-    return plt.plot(points[0], points[1])
-
-
-def forward_kinematics(params: dict, state: np.ndarray, odometry: np.ndarray) -> np.ndarray:
-    """
-    Forward kinematics for differential platform
-    Arc Kinematic motion model (Prob.Rob.Ch5.3)
-    Assumption: motion consists of arcs
-
-    Arc length = k * (V1 + V2) / 2
-    Arc angle = k * (V1 - V2) / l
-    k = 2 * pi * r / counts_2pi
-
-    angle_wheel (scalar) = counts / counts_per_rotation * 2 * pi
-    angle_robot (scalar) = angle_wheel * r / R (R - rotation radius (L))
-
-    :param params: Dict, robot geometry parameters
-    :param state: Array-like object (1x3), robot current state [x, y, theta]
-    :param odometry: Array-like object (1x2), ticks from odometry [right, left]
-    """
-    assert state.shape == (3,)
-    assert odometry.shape == (2,)
-    assert params.get('diag_length')
-    assert params.get('wheel_radius')
-    assert params.get('counts_per_rotation_right')
-    assert params.get('counts_per_rotation_left')
-
-    l = params['diag_length']
-    r = params['wheel_radius']
-    counts_2pi_r = params['counts_per_rotation_right']
-    counts_2pi_l = params['counts_per_rotation_left']
-    x, y, th = state
-
-    k_r = 2 * np.pi * r / counts_2pi_r
-    k_l = 2 * np.pi * r / counts_2pi_l
-    d_len_right = odometry[0] * k_r
-    d_len_left = odometry[1] * k_l
-    d_len = (d_len_right + d_len_left) / 2
-    d_angle = (d_len_right - d_len_left) / l
-
-    if d_angle != 0:
-        d_state = np.array([d_len/d_angle * (-np.sin(th) + np.sin(th + d_angle)),
-                            d_len/d_angle * (np.cos(th) - np.cos(th + d_angle)),
-                            d_angle])
-    else:
-        d_state = np.array([d_len * np.cos(th),
-                            d_len * np.sin(th),
-                            d_angle])
-
-    return d_state
-
-
-
-def aplly_EKF(args):
+def apply_EKF(args):
     
     source_observations = args.source_observations
     source_actions = args.source_actions
@@ -91,12 +34,6 @@ def aplly_EKF(args):
     f_in = open(source_actions, 'r', encoding='utf-8')
     f_od = open(source_observations, 'r')
     f = open(trajectory_filename, 'r')
-
-    # metres
-    params = {'diag_length': 0.490,
-              'wheel_radius': 0.130,
-              'counts_per_rotation_left': 2594,
-              'counts_per_rotation_right': 3248}
 
     # find first observation
     ts_obs_prev, left_obs_prev, right_obs_prev = list(map(int, obs.readline().split()))
@@ -286,20 +223,13 @@ def aplly_EKF(args):
     
     print(colored('saved to: ', 'green', attrs=['bold']), plot_path_fname)
 
-    # print(t_gt)
-    # print(t_ekf)
-    # print(max(np.array(t_ekf).min(), t_gt.min()), min(np.array(t_ekf).max(), t_gt.max()))
     t_sync = np.linspace(max(np.array(t_ekf).min(), t_gt.min()) + 10, min(np.array(t_ekf).max(), t_gt.max()) - 10, 100)
-    # print('yes ')
-    # print(np.array(np.array(t_ekf).max()), np.array(t_ekf).min(), t_sync.max(), t_sync.min())
     x_sync = interpolate(x, t_ekf, t_sync)
-    # print('yes ')
     y_sync = interpolate(y, t_ekf, t_sync)
-    # print('yes ')
+
     x_gt_sync = interpolate(x_gt, t_gt, t_sync)
-    # print('yes ')
     y_gt_sync = interpolate(y_gt, t_gt, t_sync)
-    # print('yes ')
+
     plot_err_fname = os.path.join(args.folder_path_output, 'err.png')
 
     plt.figure()
@@ -311,7 +241,6 @@ def aplly_EKF(args):
     plt.show()
 
     print(colored('saved to: ', 'green', attrs=['bold']), plot_err_fname)
-
 
 
 
@@ -330,7 +259,7 @@ if __name__ == '__main__':
                         type=str,
                         dest='source_actions',
                         action='store',
-                        default='./raw_data/input_log07.txt',
+                        default='./data/input07.txt',
                         help="Path to actions file")
 
     parser.add_argument('-traj',
@@ -338,7 +267,7 @@ if __name__ == '__main__':
                         dest='trajectory_filename',
                         action='store',
                         default='./data/trajectory07.txt',
-                        help="Path to actions file")
+                        help="Path to ground truth file")
 
 
     parser.add_argument('-save_to',
@@ -348,4 +277,4 @@ if __name__ == '__main__':
                         default='./output')
 
     args = parser.parse_args()
-    aplly_EKF(args)
+    apply_EKF(args)

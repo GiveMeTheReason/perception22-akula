@@ -1,0 +1,6104 @@
+header:
+  stamp:
+    sec: 5182
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 185913
+---
+header:
+  stamp:
+    sec: 5182
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 185901
+---
+header:
+  stamp:
+    sec: 5182
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 186034
+---
+header:
+  stamp:
+    sec: 5182
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 186175
+---
+header:
+  stamp:
+    sec: 5182
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 186318
+---
+header:
+  stamp:
+    sec: 5182
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 186460
+---
+header:
+  stamp:
+    sec: 5182
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 186601
+---
+header:
+  stamp:
+    sec: 5182
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 186743
+---
+header:
+  stamp:
+    sec: 5182
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 186884
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 187027
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 187168
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 187310
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 187452
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 187593
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 187735
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 187877
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 188019
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 188160
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 188302
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 188444
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 188585
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 188727
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 188869
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 189011
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 189152
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 189294
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 189436
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 189577
+---
+header:
+  stamp:
+    sec: 5183
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 189719
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 189861
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 190003
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 190145
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 190287
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 190428
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 190570
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 190712
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 190854
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 190996
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 191138
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 191280
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 191421
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 191563
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 191705
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 191847
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 191988
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 192130
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 192272
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 192414
+---
+header:
+  stamp:
+    sec: 5184
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 192556
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 192697
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 192839
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 192981
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 193123
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 193264
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 193407
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 193548
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 193690
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 193832
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 193974
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 194115
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 194257
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 194399
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 194541
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 194683
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 194824
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 194966
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 195108
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 195249
+---
+header:
+  stamp:
+    sec: 5185
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 195391
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 195533
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 195675
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 195816
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 195958
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 196100
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 196242
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 196383
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 196525
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 196667
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 196809
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 196951
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 197093
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 197235
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 197377
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 197519
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 197660
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 197803
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 197944
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 198086
+---
+header:
+  stamp:
+    sec: 5186
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 198228
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 198369
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 198511
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 198653
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 198795
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 198937
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 199079
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 199220
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 199362
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 199504
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 199646
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 199788
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 199930
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 200072
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 200214
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 200356
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 200498
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 200640
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 200781
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 200924
+---
+header:
+  stamp:
+    sec: 5187
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 201065
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 201207
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 201349
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 201491
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 201633
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 201775
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 201916
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 202059
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 202200
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 202342
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 202484
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 202626
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 202768
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 202909
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 203051
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 203193
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 203335
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 203477
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 203619
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 203761
+---
+header:
+  stamp:
+    sec: 5188
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 203903
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 204044
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 204187
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 204328
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 204470
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 204612
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 204753
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 204895
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 205037
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 205179
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 205321
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 205462
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 205604
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 205746
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 205888
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 206030
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 206172
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 206314
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 206456
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 206598
+---
+header:
+  stamp:
+    sec: 5189
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 206740
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 206881
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 207023
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 207165
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 207307
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 207449
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 207591
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 207733
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 207875
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 208016
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 208159
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 208300
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 208442
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 208584
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 208725
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 208867
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 209009
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 209151
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 209293
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 209435
+---
+header:
+  stamp:
+    sec: 5190
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 209577
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 209719
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 209861
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 210003
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 210144
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 210287
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 210428
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 210571
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 210712
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 210854
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 210996
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 211138
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 211280
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 211421
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 211564
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 211705
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 211848
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 211989
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 212131
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 212273
+---
+header:
+  stamp:
+    sec: 5191
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 212415
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 212557
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 212699
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 212841
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 212983
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 213125
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 213267
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 213409
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 213551
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 213693
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 213836
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 213977
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 214119
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 214261
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 214403
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 214545
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 214684
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 214826
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 214968
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 215110
+---
+header:
+  stamp:
+    sec: 5192
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 215252
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 215394
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 215536
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 215678
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 215820
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 215962
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 216104
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 216246
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 216388
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 216530
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 216672
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 216814
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 216956
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 217098
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 217240
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 217382
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 217524
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 217665
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 217808
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 217949
+---
+header:
+  stamp:
+    sec: 5193
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 218091
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 218233
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 218375
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 218517
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 218658
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 218800
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 218942
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 219084
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 219226
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 219368
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 219510
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 219652
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 219794
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 219936
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 220078
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 220220
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 220362
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 220504
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 220646
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 220788
+---
+header:
+  stamp:
+    sec: 5194
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 220929
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 221072
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 221213
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 221355
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 221497
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 221639
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 221781
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 221922
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 222064
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 222206
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 222348
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 222490
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 222632
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 222774
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 222916
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 223058
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 223200
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 223342
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 223484
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 223626
+---
+header:
+  stamp:
+    sec: 5195
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 223768
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 223910
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 224052
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 224194
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 224336
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 224478
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 224620
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 224762
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 224904
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 225045
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 225188
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 225329
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 225472
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 225613
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 225755
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 225897
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 226039
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 226181
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 226324
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 226465
+---
+header:
+  stamp:
+    sec: 5196
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 226608
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 226749
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 226891
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 227033
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 227175
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 227317
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 227458
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 227601
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 227742
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 227884
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 228026
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 228168
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 228310
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 228452
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 228594
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 228736
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 228878
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 229020
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 229162
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 229304
+---
+header:
+  stamp:
+    sec: 5197
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 229446
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 229588
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 229730
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 229872
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 230014
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 230156
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 230297
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 230440
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 230581
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 230723
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 230865
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 231007
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 231149
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 231291
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 231433
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 231574
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 231716
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 231858
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 232001
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 232142
+---
+header:
+  stamp:
+    sec: 5198
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 232285
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 232426
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 232568
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 232710
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 232853
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 232994
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 233137
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 233279
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 233421
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 233563
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 233704
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 233846
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 233989
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 234130
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 234272
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 234414
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 234556
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 234698
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 234840
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 234982
+---
+header:
+  stamp:
+    sec: 5199
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 235124
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 235266
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 235408
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 235550
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 235692
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 235834
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 235976
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 236118
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 236261
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 236402
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 236545
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 236686
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 236829
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 236970
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 237113
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 237255
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 237397
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 237539
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 237681
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 237823
+---
+header:
+  stamp:
+    sec: 5200
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 237965
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 238107
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 238249
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 238391
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 238533
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 238675
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 238817
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 238959
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 239101
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 239244
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 239386
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 239528
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 239670
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 239812
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 239954
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 240096
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 240238
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 240380
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 240522
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 240664
+---
+header:
+  stamp:
+    sec: 5201
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 240806
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 240948
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 241090
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 241232
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 241374
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 241516
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 241658
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 241800
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 241942
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 242084
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 242226
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 242368
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 242510
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 242652
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 242794
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 242937
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 243078
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 243221
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 243362
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 243504
+---
+header:
+  stamp:
+    sec: 5202
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 243646
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 243789
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 243930
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 244073
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 244214
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 244356
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 244498
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 244640
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 244782
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 244925
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 245067
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 245209
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 245351
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 245493
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 245635
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 245777
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 245920
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 246062
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 246204
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 246346
+---
+header:
+  stamp:
+    sec: 5203
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 246488
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 246630
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 246772
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 246914
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 247056
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 247198
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 247340
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 247482
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 247624
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 247766
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 247908
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 248050
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 248192
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 248334
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 248477
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 248619
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 248761
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 248903
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 249045
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 249188
+---
+header:
+  stamp:
+    sec: 5204
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 249330
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 249472
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 249614
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 249756
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 249898
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250040
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250182
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250325
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250466
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250609
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250751
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250885
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250893
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250893
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5205
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5206
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5207
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5208
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5209
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5210
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5211
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5212
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5213
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5214
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5215
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5216
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5217
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5218
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 738000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 788000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 838000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 888000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 938000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5219
+    nanosec: 988000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 38000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 88000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 138000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 188000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 238000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 288000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 338000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 388000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 438000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 488000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 538000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 588000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 638000
+  frame_id: encoders
+left: 82051
+right: 250892
+---
+header:
+  stamp:
+    sec: 5220
+    nanosec: 688000
+  frame_id: encoders
+left: 82051
+right: 250892
+---

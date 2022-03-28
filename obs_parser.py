@@ -1,8 +1,10 @@
 # frequency = 20 Hz
 # time: milliseconds
 
-input_filename = 'obs_log06.txt'
-output_filename = 'obs06.txt'
+index = '06'
+
+input_filename = './raw_data/obs_log' + index + '.txt'
+output_filename = './data/obs' + index + '.txt'
 
 f = open(input_filename, 'r')
 f_out = open(output_filename, 'w')
