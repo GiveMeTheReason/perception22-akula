@@ -19,7 +19,11 @@ Skoltech educational project. Performed within the [Perception in Robotics 2022]
 
 ```bash
 python3 sync.py -src_obs ./data/obs07.txt -src_act ./raw_data/input_log07.txt -save_to ./output
-````
+```
+
+## Report
+
+Details about experiments can be found in [report](perception22_akula.pdf)
 
 <p align="center">
   <img src="output/plot.png" />
